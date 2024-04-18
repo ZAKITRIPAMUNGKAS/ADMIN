@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .badge {
+        font-size: 14px;
+      }
+      .btn-action {
+        margin-right: 5px;
+      }
+      .navbar {
+        background-color: #007bff;
+      }
+      .navbar-brand {
+        color: #fff;
+      }
+      .navbar-brand:hover {
+        color: #fff;
+      }
+      .container {
+        margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="login">Admin Ruang Teknik</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="admin">Peminjaman Ruangan</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://jovankaberhimpon.github.io/ruangteknik/INDEX.html"
+              >Website Peminjaman</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama Ruangan</th>
+                  <th scope="col">Peminjam</th>
+                  <th scope="col">Waktu Peminjaman</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ruangan</td>
+                  <td>John Doe</td>
+                  <td>2024-04-18 10:00 - 12:00</td>
+                  <td>
+                    <span class="badge badge-primary"
+                      >Menunggu Persetujuan</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-action"
+                      data-toggle="modal"
+                      data-target="#approveModal"
+                    >
+                      Setujui
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-action"
+                      data-toggle="modal"
+                      data-target="#rejectModal"
+                    >
+                      Tolak
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ruangan</td>
+                  <td>John Doe</td>
+                  <td>2024-04-18 10:00 - 12:00</td>
+                  <td>
+                    <span class="badge badge-primary"
+                      >Menunggu Persetujuan</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-action"
+                      data-toggle="modal"
+                      data-target="#approveModal"
+                    >
+                      Setujui
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-action"
+                      data-toggle="modal"
+                      data-target="#rejectModal"
+                    >
+                      Tolak
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ruangan</td>
+                  <td>John Doe</td>
+                  <td>2024-04-18 10:00 - 12:00</td>
+                  <td>
+                    <span class="badge badge-primary"
+                      >Menunggu Persetujuan</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-action"
+                      data-toggle="modal"
+                      data-target="#approveModal"
+                    >
+                      Setujui
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-action"
+                      data-toggle="modal"
+                      data-target="#rejectModal"
+                    >
+                      Tolak
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ruangan</td>
+                  <td>John Doe</td>
+                  <td>2024-04-18 10:00 - 12:00</td>
+                  <td>
+                    <span class="badge badge-primary"
+                      >Menunggu Persetujuan</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-action"
+                      data-toggle="modal"
+                      data-target="#approveModal"
+                    >
+                      Setujui
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-action"
+                      data-toggle="modal"
+                      data-target="#rejectModal"
+                    >
+                      Tolak
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Setujui -->
+    <div
+      class="modal fade"
+      id="approveModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="approveModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="approveModalLabel">
+              Setujui Peminjaman Ruangan
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Apakah Anda yakin ingin menyetujui peminjaman ruangan ini?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-success">Setujui</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Tolak -->
+    <div
+      class="modal fade"
+      id="rejectModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="rejectModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rejectModalLabel">
+              Tolak Peminjaman Ruangan
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Apakah Anda yakin ingin menolak peminjaman ruangan ini?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-danger">Tolak</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
